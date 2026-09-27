@@ -1,0 +1,143 @@
+$date
+	Thu Sep 24 09:05:39 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_aquila $end
+$var wire 2 ! turbidity_state [1:0] $end
+$var wire 2 " temperature_state [1:0] $end
+$var wire 2 # salinity_state [1:0] $end
+$var wire 2 $ range_state [1:0] $end
+$var wire 32 % pulse_duration [31:0] $end
+$var wire 2 & mode [1:0] $end
+$var wire 8 ' lut_address [7:0] $end
+$var wire 32 ( fc [31:0] $end
+$var wire 32 ) bandwidth [31:0] $end
+$var wire 16 * amplitude [15:0] $end
+$var reg 12 + range [11:0] $end
+$var reg 12 , salinity [11:0] $end
+$var reg 12 - temperature [11:0] $end
+$var reg 12 . turbidity [11:0] $end
+$scope module dut $end
+$var wire 12 / range [11:0] $end
+$var wire 12 0 salinity [11:0] $end
+$var wire 12 1 temperature [11:0] $end
+$var wire 12 2 turbidity [11:0] $end
+$var wire 2 3 turbidity_state [1:0] $end
+$var wire 2 4 temperature_state [1:0] $end
+$var wire 2 5 salinity_state [1:0] $end
+$var wire 2 6 range_state [1:0] $end
+$var wire 32 7 pulse_duration [31:0] $end
+$var wire 2 8 mode [1:0] $end
+$var wire 8 9 lut_address [7:0] $end
+$var wire 32 : fc [31:0] $end
+$var wire 32 ; bandwidth [31:0] $end
+$var wire 16 < amplitude [15:0] $end
+$scope module classifier_inst $end
+$var wire 12 = range [11:0] $end
+$var wire 12 > salinity [11:0] $end
+$var wire 12 ? temperature [11:0] $end
+$var wire 12 @ turbidity [11:0] $end
+$var parameter 12 A RANGE_FAR $end
+$var parameter 12 B RANGE_NEAR $end
+$var parameter 12 C SAL_HIGH $end
+$var parameter 12 D SAL_LOW $end
+$var parameter 12 E TEMP_HIGH $end
+$var parameter 12 F TEMP_LOW $end
+$var parameter 12 G TURB_HIGH $end
+$var parameter 12 H TURB_LOW $end
+$var reg 2 I range_state [1:0] $end
+$var reg 2 J salinity_state [1:0] $end
+$var reg 2 K temperature_state [1:0] $end
+$var reg 2 L turbidity_state [1:0] $end
+$upscope $end
+$scope module encoder_inst $end
+$var wire 2 M range_state [1:0] $end
+$var wire 2 N salinity_state [1:0] $end
+$var wire 2 O temperature_state [1:0] $end
+$var wire 2 P turbidity_state [1:0] $end
+$var reg 8 Q lut_address [7:0] $end
+$upscope $end
+$scope module lut_inst $end
+$var wire 8 R lut_address [7:0] $end
+$var parameter 2 S MODE_GEOMETRIC $end
+$var parameter 2 T MODE_LFM $end
+$var parameter 2 U MODE_PHASE $end
+$var reg 16 V amplitude [15:0] $end
+$var reg 32 W bandwidth [31:0] $end
+$var reg 32 X fc [31:0] $end
+$var reg 2 Y mode [1:0] $end
+$var reg 32 Z pulse_duration [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 U
+b0 T
+b1 S
+b10100 H
+b1100100 G
+b10100 F
+b11110 E
+b100101100 D
+b1001011000 C
+b1 B
+b11 A
+$end
+#0
+$dumpvars
+b111110100000 Z
+b1 Y
+b110000110101000000 X
+b10001000101110000 W
+b1100100000 V
+b1010101 R
+b1010101 Q
+b1 P
+b1 O
+b1 N
+b1 M
+b1 L
+b1 K
+b1 J
+b1 I
+b100011 @
+b11100 ?
+b111000010 >
+b10 =
+b1100100000 <
+b10001000101110000 ;
+b110000110101000000 :
+b1010101 9
+b1 8
+b111110100000 7
+b1 6
+b1 5
+b1 4
+b1 3
+b100011 2
+b11100 1
+b111000010 0
+b10 /
+b100011 .
+b11100 -
+b111000010 ,
+b10 +
+b1100100000 *
+b10001000101110000 )
+b110000110101000000 (
+b1010101 '
+b1 &
+b111110100000 %
+b1 $
+b1 #
+b1 "
+b1 !
+$end
+#20000
