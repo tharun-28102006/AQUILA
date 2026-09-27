@@ -1,4 +1,5 @@
 # AQUILA
+FPGA-based sonar waveform generation and DAC streaming, with SystemVerilog RTL and Python simulation and validation models.
 
 AQUILA is an FPGA-oriented sonar waveform generation and validation project. It combines SystemVerilog RTL for sensor-state classification, waveform selection, sample generation, safety checks, and DAC interfaces with Python models for LUT generation, analog-path analysis, and system-level validation.
 
