@@ -84,6 +84,51 @@ python python_model/system_simulation.py
 
 The script validates the classifier and state encoding, all 81 adaptive LUT profiles, frequency limits, 5 MSPS sample-enable timing, all three waveform modes, Hann windowing, the behavioral DAC and analog models, FFT and spectrogram generation, ping-boundary profile changes, and estimated power. A successful run ends with `AQUILA VALIDATION COMPLETE` and prints `PASS` for each check.
 
+### Expected Python output
+
+The exact numeric values below are from a validated run. Paths, package versions, and plot metadata can differ by machine.
+
+```text
+==========================================
+			AQUILA SYSTEM VALIDATION
+==========================================
+Environment model              PASS
+Demo address                   : 0x55 (1111)
+81-state LUT                   PASS
+LUT summary                    : 81/81 valid, modes={'GEOMETRIC': 27, 'LFM': 27, 'PHASE_CODED': 27}
+Frequency range                : 137580 to 468400 Hz
+Pulse duration range           : 2000 to 8000 us
+Amplitude range                : 600 to 1000
+100-500 kHz safety             PASS
+5 MSPS sample timing           PASS
+Sample timing                  : 10 FPGA cycles, 5000000 Hz
+Geometric                      PASS
+	geometric: address=0x50, Fc=400000 Hz, sweep=360000-440000 Hz, N=10000, Vpp=1.1954 V, Vrms=0.2588 V, P=0.001339 W
+Lfm                            PASS
+	lfm: address=0x51, Fc=300000 Hz, sweep=260000-340000 Hz, N=20000, Vpp=1.5988 V, Vrms=0.3463 V, P=0.002398 W
+Phase_Coded                    PASS
+	phase: address=0x52, Fc=180000 Hz, sweep=150000-210000 Hz, N=40000, Vpp=2.0176 V, Vrms=0.4330 V, P=0.003750 W
+Hann window                    PASS
+Ping-boundary adaptation       PASS
+DAC model                      PASS
+Analog filter                  PASS
+Output amplifier model        PASS
+FFT                           PASS
+Spectrogram                   PASS
+DAC interface audit            PASS
+Single-lane SPI max rate      : 416667 samples/s (NOT 5 MSPS capable)
+Dual-SPI/DDR stream estimate  : 520833 samples/s (below 5 MSPS target)
+Power calculation              PASS
+Electronics power estimate    : 0.8331 W
+50-ohm load power estimate    : 0.010000 W
+
+==========================================
+			AQUILA VALIDATION COMPLETE
+==========================================
+Results directory              : python_model/results
+Demo environment               : Environment(temperature=28.0, salinity=450.0, turbidity=35.0, range_m=2.5)
+```
+
 The run writes summary data and plots under `python_model/results/`, including:
 
 - `system_summary.csv` with the three demo waveform cases and modeled output metrics.
@@ -114,6 +159,24 @@ vvp build/aquila_5msps.vvp
 ```
 
 The testbench checks initial and ping-boundary profiles, profile limits, and sample-enable timing. A successful run prints `PASS: Aquila 5-MSPS system-level RTL simulation`. It also writes `aquila_5msps.vcd` in the current working directory; open that file in a waveform viewer such as GTKWave to inspect signal timing.
+
+### Expected RTL output
+
+Icarus Verilog 12.0 emits the following non-fatal warnings before the testbench results. The source paths shown here are relative to the repository root.
+
+```text
+rtl/digital_window.sv:89: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+rtl/digital_window.sv:89: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+rtl/digital_window.sv:89: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+rtl/digital_window.sv:89: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+rtl/phase_coded_waveform_engine.sv:48: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+VCD info: dumpfile aquila_5msps.vcd opened for output.
+INITIAL: addr=aa mode=2 Fc=167580 BW=48000 Tp_us=8000 Amp=1000 valid=1
+BOUNDARY: addr=00 requested_mode=0 active_mode=0 active_Fc=428400
+TIMING: sample_enable interval=200 ns frequency=5 MHz events=5380
+PASS: Aquila 5-MSPS system-level RTL simulation
+rtl/tb_aquila_system_5msps.sv:134: $finish called at 1076210000 (1ps)
+```
 
 Icarus may print `sorry: constant selects in always_* processes are not currently supported` warnings for some RTL constructs. With the validated Icarus version, these warnings are non-fatal and the testbench completes successfully.
 
