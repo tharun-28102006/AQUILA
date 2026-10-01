@@ -1,6 +1,6 @@
 # FPGA-Based Environment-Adaptive Sonar Transmitter for AUVs
 
-**AQUILA is the repository and prototype identifier for an engineering development project exploring environment-adaptive sonar transmission on an FPGA.** It contains Python reference models, SystemVerilog RTL and testbenches, an analog transmitter design, a KiCad PCB layout, and a CadQuery-generated mechanical payload model. It is not a completed or field-qualified sonar product.
+**This project presents an engineering prototype for environment-adaptive sonar transmission using an FPGA.** It contains Python reference models, SystemVerilog RTL and testbenches, an analog transmitter design, a KiCad PCB layout, and a CadQuery-generated mechanical payload model. It is not a completed or field-qualified sonar product.
 
 The repository mixes runnable models and design artifacts. Physical performance, underwater operation, and hardware integration remain to be demonstrated.
 
@@ -56,7 +56,7 @@ This checked-in plot is a 4 ms, 300 kHz-center LFM example from the Python model
 
 ## Project Overview
 
-AQUILA explores selecting a sonar pulse profile from four environmental inputs rather than using one fixed profile. Temperature, salinity, turbidity, and AUV-to-seabed range/depth are classified into three discrete states. The selected profile is held stable during a ping and may be replaced at the next ping boundary.
+The proposed system selects a sonar pulse profile from four environmental inputs rather than using a single fixed profile. Temperature, salinity, turbidity, and AUV-to-seabed range/depth are classified into three discrete states. The selected profile is held stable during a ping and may be replaced at the next ping boundary.
 
 ### Problem and Proposed Solution
 
@@ -209,7 +209,7 @@ The placed design identifies an AD3541R DAC footprint, SN74AXC4T774 level transl
 
 ## Mechanical CAD / Payload
 
-![AQUILA enclosure general-arrangement drawing](aquila-freecad/AQUILA_drawing.svg)
+![Transmitter enclosure general-arrangement drawing](aquila-freecad/AQUILA_drawing.svg)
 
 The mechanical package describes a transmitter enclosure and payload layout, not a receiver/hydrophone assembly. Its nominal envelope is approximately 330 mm long x 138 mm wide x 129 mm high; the shell is 300 mm long, 110 mm outside diameter, and 102 mm inside diameter. The drawing is a general arrangement, not a released fabrication drawing.
 
@@ -381,7 +381,7 @@ It writes plots, CSVs, and a JSON summary under `AQUILA_LTSPICE/results/`. [`AQU
 
 ## Mechanical CAD / Payload
 
-![AQUILA enclosure general-arrangement drawing](aquila-freecad/AQUILA_drawing.svg)
+![Transmitter enclosure general-arrangement drawing](aquila-freecad/AQUILA_drawing.svg)
 
 This is a transmitter enclosure/payload layout, not a receiver/hydrophone assembly. The nominal envelope is about 330 x 138 x 129 mm; the shell is 300 mm long, 110 mm outside diameter, and 102 mm inside diameter. The SVG is a general-arrangement drawing, not a fabrication release.
 
@@ -489,7 +489,7 @@ The system-level RTL test exercises an internal 5 MSPS sample-enable event from 
 
 ## Where Should I Start?
 
-- **New to AQUILA:** read the [Project Overview](#project-overview), [System Architecture](#system-architecture), [How the System Works](#how-the-system-works), and [Simulation Results](#simulation-results).
+- **New to Project:** read the [Project Overview](#project-overview), [System Architecture](#system-architecture), [How the System Works](#how-the-system-works), and [Simulation Results](#simulation-results).
 - **Run the Python model:** see [requirements](requirements.txt) and [`python_model/system_simulation.py`](python_model/system_simulation.py).
 - **Inspect RTL:** start with [`rtl/aquila_system_top.sv`](rtl/aquila_system_top.sv), [`rtl/aquila_top.sv`](rtl/aquila_top.sv), [`rtl/ping_profile_latch.sv`](rtl/ping_profile_latch.sv), and [`rtl/tb_aquila_system_5msps.sv`](rtl/tb_aquila_system_5msps.sv).
 - **Inspect analog design:** open [`AQUILA_LTSPICE/`](AQUILA_LTSPICE/) and its project README.
@@ -507,4 +507,4 @@ No repository-level `LICENSE` file is present, so project-wide reuse/redistribut
 
 ## Disclaimer
 
-AQUILA is an engineering prototype/development and simulation repository. It does not establish a completed sonar product, measured low-power operation, underwater acoustic performance, safe pressure housing, or AUV deployment. Independently review and validate electrical, mechanical, safety, and environmental requirements before building or testing hardware.
+This repository contains the engineering prototype, development models, simulations, and design artifacts for the proposed sonar transmitter. It does not establish a completed sonar product, measured low-power operation, underwater acoustic performance, safe pressure housing, or AUV deployment. Independently review and validate electrical, mechanical, safety, and environmental requirements before building or testing hardware.
