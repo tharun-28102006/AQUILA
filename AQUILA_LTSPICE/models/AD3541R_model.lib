@@ -1,0 +1,19 @@
+* AQUILA functional equivalent, NOT the Analog Devices AD3541R macromodel.
+* ADI lists an official LTspice model; it could not be retrieved here.
+* 0..2.5 V span, 16-bit rounding, explicit 1-pole settling, 0.5-ohm Rout.
+* 100 ns to 0.1% => tau=14.476 ns. This is an approximation, not a fit.
+* No SPI, reference drift/noise, INL/DNL, glitch impulse or DAC supply current.
+* Power pins are explicit for schematic review, NOT functional power modeling.
+* Pin order: CMD OUT AGND AVDD DVDD VLOGIC PVDD PVSS DGND.
+.subckt AD3541R_EQ CMD OUT AGND AVDD DVDD VLOGIC PVDD PVSS DGND
+Bquant quant AGND V={DAC_SPAN/(2**DAC_BITS-1)*floor(min(max(V(CMD,AGND),0),DAC_SPAN)*(2**DAC_BITS-1)/DAC_SPAN+0.5)}
+Rsettle quant settled 1k
+Csettle settled AGND {DAC_TAU/1k}
+Eout drive AGND settled AGND 1
+Rout drive OUT 0.5
+Ravdd AVDD AGND 1T
+Rdvdd DVDD DGND 1T
+Rvlogic VLOGIC DGND 1T
+Rpvdd PVDD AGND 1T
+Rpvss PVSS AGND 1T
+.ends AD3541R_EQ

@@ -1,0 +1,1300 @@
+[
+  {
+    "id": "01_Main_enclosure",
+    "name": "01 Main enclosure",
+    "category": "housing",
+    "color": "#deded4",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      50
+    ],
+    "note": "110 OD / 102 ID; integral collars and tray runners; blind M4 insert pilots.",
+    "bounds": [
+      300.08,
+      120.08,
+      120.08
+    ],
+    "volume_mm3": 480659.78,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/01_Main_enclosure.stl"
+  },
+  {
+    "id": "02_Front_service_cap",
+    "name": "02 Front service cap",
+    "category": "front",
+    "color": "#263d43",
+    "printable": true,
+    "explode": [
+      -52,
+      0,
+      0
+    ],
+    "note": "Radial O-ring gland; six M4 clearance holes; alignment pin socket; engraved port labels.",
+    "bounds": [
+      16.08,
+      120.09,
+      120.09
+    ],
+    "volume_mm3": 100148.98,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/02_Front_service_cap.stl"
+  },
+  {
+    "id": "Seal_Front_service_cap",
+    "name": "Seal Front service cap",
+    "category": "front",
+    "color": "#ec713e",
+    "printable": false,
+    "explode": [
+      -30,
+      0,
+      0
+    ],
+    "note": "Illustrative installed 2 mm O-ring; select catalog seal and calculate gland fill/stretch before manufacture.",
+    "bounds": [
+      2.07,
+      102.47,
+      102.47
+    ],
+    "volume_mm3": 990.91,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Seal_Front_service_cap.stl"
+  },
+  {
+    "id": "Alignment_pin_Front_service_cap",
+    "name": "Alignment pin Front service cap",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -42,
+      0,
+      0
+    ],
+    "note": "",
+    "bounds": [
+      6.0,
+      3.0,
+      3.0
+    ],
+    "volume_mm3": 42.41,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Alignment_pin_Front_service_cap.stl"
+  },
+  {
+    "id": "M4_Front_service_cap_1",
+    "name": "M4 Front service cap 1",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Front_service_cap_1.stl"
+  },
+  {
+    "id": "M4_Front_service_cap_2",
+    "name": "M4 Front service cap 2",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Front_service_cap_2.stl"
+  },
+  {
+    "id": "M4_Front_service_cap_3",
+    "name": "M4 Front service cap 3",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Front_service_cap_3.stl"
+  },
+  {
+    "id": "M4_Front_service_cap_4",
+    "name": "M4 Front service cap 4",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Front_service_cap_4.stl"
+  },
+  {
+    "id": "M4_Front_service_cap_5",
+    "name": "M4 Front service cap 5",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Front_service_cap_5.stl"
+  },
+  {
+    "id": "M4_Front_service_cap_6",
+    "name": "M4 Front service cap 6",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Front_service_cap_6.stl"
+  },
+  {
+    "id": "Connector_SENSOR_INPUT",
+    "name": "Connector SENSOR INPUT",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -75,
+      0,
+      0
+    ],
+    "note": "Generic sealed bulkhead placeholder; not a purchasable connector definition.",
+    "bounds": [
+      17.01,
+      22.2,
+      19.23
+    ],
+    "volume_mm3": 3189.19,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Connector_SENSOR_INPUT.stl"
+  },
+  {
+    "id": "Insert_SENSOR_INPUT",
+    "name": "Insert SENSOR INPUT",
+    "category": "front",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      -75,
+      0,
+      0
+    ],
+    "note": "Protected connector insert / blanking plug.",
+    "bounds": [
+      1.21,
+      11.61,
+      11.61
+    ],
+    "volume_mm3": 126.82,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Insert_SENSOR_INPUT.stl"
+  },
+  {
+    "id": "Connector_DEBUG",
+    "name": "Connector DEBUG",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -75,
+      0,
+      0
+    ],
+    "note": "Generic sealed bulkhead placeholder; not a purchasable connector definition.",
+    "bounds": [
+      17.01,
+      18.2,
+      15.76
+    ],
+    "volume_mm3": 1870.03,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Connector_DEBUG.stl"
+  },
+  {
+    "id": "Insert_DEBUG",
+    "name": "Insert DEBUG",
+    "category": "front",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      -75,
+      0,
+      0
+    ],
+    "note": "Protected connector insert / blanking plug.",
+    "bounds": [
+      1.21,
+      7.61,
+      7.61
+    ],
+    "volume_mm3": 54.44,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Insert_DEBUG.stl"
+  },
+  {
+    "id": "Connector_STATUS",
+    "name": "Connector STATUS",
+    "category": "front",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      -75,
+      0,
+      0
+    ],
+    "note": "Generic sealed bulkhead placeholder; not a purchasable connector definition.",
+    "bounds": [
+      17.01,
+      14.2,
+      12.3
+    ],
+    "volume_mm3": 901.58,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Connector_STATUS.stl"
+  },
+  {
+    "id": "Insert_STATUS",
+    "name": "Insert STATUS",
+    "category": "front",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      -75,
+      0,
+      0
+    ],
+    "note": "Protected connector insert / blanking plug.",
+    "bounds": [
+      1.2,
+      3.6,
+      3.6
+    ],
+    "volume_mm3": 12.21,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Insert_STATUS.stl"
+  },
+  {
+    "id": "03_Rear_interface_cap",
+    "name": "03 Rear interface cap",
+    "category": "rear",
+    "color": "#263d43",
+    "printable": true,
+    "explode": [
+      52,
+      0,
+      0
+    ],
+    "note": "Radial O-ring gland; six M4 clearance holes; alignment pin socket; engraved port labels.",
+    "bounds": [
+      16.08,
+      120.09,
+      120.09
+    ],
+    "volume_mm3": 99595.27,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/03_Rear_interface_cap.stl"
+  },
+  {
+    "id": "Seal_Rear_interface_cap",
+    "name": "Seal Rear interface cap",
+    "category": "rear",
+    "color": "#ec713e",
+    "printable": false,
+    "explode": [
+      30,
+      0,
+      0
+    ],
+    "note": "Illustrative installed 2 mm O-ring; select catalog seal and calculate gland fill/stretch before manufacture.",
+    "bounds": [
+      2.07,
+      102.47,
+      102.47
+    ],
+    "volume_mm3": 990.91,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Seal_Rear_interface_cap.stl"
+  },
+  {
+    "id": "Alignment_pin_Rear_interface_cap",
+    "name": "Alignment pin Rear interface cap",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      42,
+      0,
+      0
+    ],
+    "note": "",
+    "bounds": [
+      6.0,
+      3.0,
+      3.0
+    ],
+    "volume_mm3": 42.41,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Alignment_pin_Rear_interface_cap.stl"
+  },
+  {
+    "id": "M4_Rear_interface_cap_1",
+    "name": "M4 Rear interface cap 1",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Rear_interface_cap_1.stl"
+  },
+  {
+    "id": "M4_Rear_interface_cap_2",
+    "name": "M4 Rear interface cap 2",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Rear_interface_cap_2.stl"
+  },
+  {
+    "id": "M4_Rear_interface_cap_3",
+    "name": "M4 Rear interface cap 3",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Rear_interface_cap_3.stl"
+  },
+  {
+    "id": "M4_Rear_interface_cap_4",
+    "name": "M4 Rear interface cap 4",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Rear_interface_cap_4.stl"
+  },
+  {
+    "id": "M4_Rear_interface_cap_5",
+    "name": "M4 Rear interface cap 5",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Rear_interface_cap_5.stl"
+  },
+  {
+    "id": "M4_Rear_interface_cap_6",
+    "name": "M4 Rear interface cap 6",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      62,
+      0,
+      0
+    ],
+    "note": "Simplified fastener; unthreaded CAD shank; select final lengths and inserts.",
+    "bounds": [
+      19.0,
+      7.41,
+      7.41
+    ],
+    "volume_mm3": 309.47,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/M4_Rear_interface_cap_6.stl"
+  },
+  {
+    "id": "Connector_POWER",
+    "name": "Connector POWER",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      75,
+      0,
+      0
+    ],
+    "note": "Generic sealed bulkhead placeholder; not a purchasable connector definition.",
+    "bounds": [
+      17.01,
+      18.2,
+      15.76
+    ],
+    "volume_mm3": 1874.81,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Connector_POWER.stl"
+  },
+  {
+    "id": "Insert_POWER",
+    "name": "Insert POWER",
+    "category": "rear",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      75,
+      0,
+      0
+    ],
+    "note": "Protected connector insert / blanking plug.",
+    "bounds": [
+      1.21,
+      7.61,
+      7.61
+    ],
+    "volume_mm3": 54.44,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Insert_POWER.stl"
+  },
+  {
+    "id": "Connector_ANALOG_OUT",
+    "name": "Connector ANALOG OUT",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      75,
+      0,
+      0
+    ],
+    "note": "Generic sealed bulkhead placeholder; not a purchasable connector definition.",
+    "bounds": [
+      17.01,
+      18.2,
+      15.76
+    ],
+    "volume_mm3": 1874.81,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Connector_ANALOG_OUT.stl"
+  },
+  {
+    "id": "Insert_ANALOG_OUT",
+    "name": "Insert ANALOG OUT",
+    "category": "rear",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      75,
+      0,
+      0
+    ],
+    "note": "Protected connector insert / blanking plug.",
+    "bounds": [
+      1.21,
+      7.61,
+      7.61
+    ],
+    "volume_mm3": 54.44,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Insert_ANALOG_OUT.stl"
+  },
+  {
+    "id": "Connector_TRANSDUCER",
+    "name": "Connector TRANSDUCER",
+    "category": "rear",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      75,
+      0,
+      0
+    ],
+    "note": "Generic sealed bulkhead placeholder; not a purchasable connector definition.",
+    "bounds": [
+      17.01,
+      22.2,
+      19.23
+    ],
+    "volume_mm3": 3200.13,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Connector_TRANSDUCER.stl"
+  },
+  {
+    "id": "Insert_TRANSDUCER",
+    "name": "Insert TRANSDUCER",
+    "category": "rear",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      75,
+      0,
+      0
+    ],
+    "note": "Protected connector insert / blanking plug.",
+    "bounds": [
+      1.21,
+      11.61,
+      11.61
+    ],
+    "volume_mm3": 126.82,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Insert_TRANSDUCER.stl"
+  },
+  {
+    "id": "04_Electronics_tray",
+    "name": "04 Electronics tray",
+    "category": "tray",
+    "color": "#91a2a4",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      -50
+    ],
+    "note": "Parameterized M3 standoffs; cable channels and tie slots; M3 runner retention. Nominal holes, not verified PCB patterns.",
+    "bounds": [
+      268.0,
+      84.0,
+      11.0
+    ],
+    "volume_mm3": 70481.27,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/04_Electronics_tray.stl"
+  },
+  {
+    "id": "PCB_Sensor_interface",
+    "name": "PCB Sensor interface",
+    "category": "electronics",
+    "color": "#1d7163",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      25
+    ],
+    "note": "UNVERIFIED placeholder envelope and mounting pattern. Replace with measured board + components + connectors.",
+    "bounds": [
+      28.0,
+      50.0,
+      1.96
+    ],
+    "volume_mm3": 2188.29,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/PCB_Sensor_interface.stl"
+  },
+  {
+    "id": "Component_Sensor_interface",
+    "name": "Component Sensor interface",
+    "category": "electronics",
+    "color": "#323e42",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      35
+    ],
+    "note": "",
+    "bounds": [
+      12.0,
+      15.0,
+      7.0
+    ],
+    "volume_mm3": 1260.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Component_Sensor_interface.stl"
+  },
+  {
+    "id": "Header_Sensor_interface_A",
+    "name": "Header Sensor interface A",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      16.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 288.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_Sensor_interface_A.stl"
+  },
+  {
+    "id": "Header_Sensor_interface_B",
+    "name": "Header Sensor interface B",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      16.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 288.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_Sensor_interface_B.stl"
+  },
+  {
+    "id": "PCB_FPGA_DE10_Lite",
+    "name": "PCB FPGA DE10 Lite",
+    "category": "electronics",
+    "color": "#1d7163",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      30
+    ],
+    "note": "UNVERIFIED placeholder envelope and mounting pattern. Replace with measured board + components + connectors.",
+    "bounds": [
+      130.0,
+      80.0,
+      1.96
+    ],
+    "volume_mm3": 16590.06,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/PCB_FPGA_DE10_Lite.stl"
+  },
+  {
+    "id": "Component_FPGA_DE10_Lite",
+    "name": "Component FPGA DE10 Lite",
+    "category": "electronics",
+    "color": "#323e42",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      22.0,
+      22.0,
+      7.0
+    ],
+    "volume_mm3": 3388.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Component_FPGA_DE10_Lite.stl"
+  },
+  {
+    "id": "Header_FPGA_DE10_Lite_A",
+    "name": "Header FPGA DE10 Lite A",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      40.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 720.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_FPGA_DE10_Lite_A.stl"
+  },
+  {
+    "id": "Header_FPGA_DE10_Lite_B",
+    "name": "Header FPGA DE10 Lite B",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      40.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 720.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_FPGA_DE10_Lite_B.stl"
+  },
+  {
+    "id": "PCB_Power_regulation",
+    "name": "PCB Power regulation",
+    "category": "electronics",
+    "color": "#1d7163",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      35
+    ],
+    "note": "UNVERIFIED placeholder envelope and mounting pattern. Replace with measured board + components + connectors.",
+    "bounds": [
+      34.0,
+      52.0,
+      1.96
+    ],
+    "volume_mm3": 2775.73,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/PCB_Power_regulation.stl"
+  },
+  {
+    "id": "Component_Power_regulation",
+    "name": "Component Power regulation",
+    "category": "electronics",
+    "color": "#323e42",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      45
+    ],
+    "note": "",
+    "bounds": [
+      12.0,
+      15.0,
+      7.0
+    ],
+    "volume_mm3": 1260.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Component_Power_regulation.stl"
+  },
+  {
+    "id": "Header_Power_regulation_A",
+    "name": "Header Power regulation A",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      22.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 396.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_Power_regulation_A.stl"
+  },
+  {
+    "id": "Header_Power_regulation_B",
+    "name": "Header Power regulation B",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      22.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 396.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_Power_regulation_B.stl"
+  },
+  {
+    "id": "PCB_Analog_TX_PCB",
+    "name": "PCB Analog TX PCB",
+    "category": "electronics",
+    "color": "#1d7163",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "UNVERIFIED placeholder envelope and mounting pattern. Replace with measured board + components + connectors.",
+    "bounds": [
+      60.0,
+      68.0,
+      1.96
+    ],
+    "volume_mm3": 6476.81,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/PCB_Analog_TX_PCB.stl"
+  },
+  {
+    "id": "Signal_DAC",
+    "name": "Signal DAC",
+    "category": "electronics",
+    "color": "#323e42",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      12.0,
+      16.0,
+      5.31
+    ],
+    "volume_mm3": 961.58,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Signal_DAC.stl"
+  },
+  {
+    "id": "Signal_LPF",
+    "name": "Signal LPF",
+    "category": "electronics",
+    "color": "#323e42",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      12.0,
+      16.0,
+      5.31
+    ],
+    "volume_mm3": 961.27,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Signal_LPF.stl"
+  },
+  {
+    "id": "Signal_AMP",
+    "name": "Signal AMP",
+    "category": "electronics",
+    "color": "#323e42",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      14.0,
+      20.0,
+      5.31
+    ],
+    "volume_mm3": 1401.78,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Signal_AMP.stl"
+  },
+  {
+    "id": "Header_Analog_TX_PCB_A",
+    "name": "Header Analog TX PCB A",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      40.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 720.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_Analog_TX_PCB_A.stl"
+  },
+  {
+    "id": "Header_Analog_TX_PCB_B",
+    "name": "Header Analog TX PCB B",
+    "category": "electronics",
+    "color": "#242e32",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "",
+    "bounds": [
+      40.0,
+      3.0,
+      6.0
+    ],
+    "volume_mm3": 720.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Header_Analog_TX_PCB_B.stl"
+  },
+  {
+    "id": "Heat_spreader",
+    "name": "Heat spreader",
+    "category": "tray",
+    "color": "#aab6bd",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      -28
+    ],
+    "note": "Aluminum contact plate, isolate electrically; thermal path depends on real component location.",
+    "bounds": [
+      116.0,
+      58.0,
+      2.0
+    ],
+    "volume_mm3": 13456.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Heat_spreader.stl"
+  },
+  {
+    "id": "Thermal_interface_pad",
+    "name": "Thermal interface pad",
+    "category": "tray",
+    "color": "#699c9a",
+    "printable": false,
+    "explode": [
+      0,
+      0,
+      -18
+    ],
+    "note": "Placeholder pad to underside FPGA region; confirm contact and allowable compression.",
+    "bounds": [
+      20.0,
+      20.0,
+      6.0
+    ],
+    "volume_mm3": 2400.0,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/Thermal_interface_pad.stl"
+  },
+  {
+    "id": "05_Saddle_front",
+    "name": "05 Saddle front",
+    "category": "mounting",
+    "color": "#263d43",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      -35
+    ],
+    "note": "Split saddle; 0.3 mm radial liner allowance; M4 clamp / M5 rail attachment.",
+    "bounds": [
+      12.08,
+      138.0,
+      64.04
+    ],
+    "volume_mm3": 18313.55,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/05_Saddle_front.stl"
+  },
+  {
+    "id": "06_Clamp_front",
+    "name": "06 Clamp front",
+    "category": "mounting",
+    "color": "#263d43",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "Removable upper clamp; 138 mm maximum mounting width across ears.",
+    "bounds": [
+      12.08,
+      138.0,
+      58.58
+    ],
+    "volume_mm3": 8200.2,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/06_Clamp_front.stl"
+  },
+  {
+    "id": "05_Saddle_rear",
+    "name": "05 Saddle rear",
+    "category": "mounting",
+    "color": "#263d43",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      -35
+    ],
+    "note": "Split saddle; 0.3 mm radial liner allowance; M4 clamp / M5 rail attachment.",
+    "bounds": [
+      12.08,
+      138.0,
+      64.04
+    ],
+    "volume_mm3": 18313.55,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/05_Saddle_rear.stl"
+  },
+  {
+    "id": "06_Clamp_rear",
+    "name": "06 Clamp rear",
+    "category": "mounting",
+    "color": "#263d43",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      40
+    ],
+    "note": "Removable upper clamp; 138 mm maximum mounting width across ears.",
+    "bounds": [
+      12.08,
+      138.0,
+      58.58
+    ],
+    "volume_mm3": 8200.2,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/06_Clamp_rear.stl"
+  },
+  {
+    "id": "07_Mounting_rail_left",
+    "name": "07 Mounting rail left",
+    "category": "mounting",
+    "color": "#aab6bd",
+    "printable": true,
+    "explode": [
+      0,
+      -19.0,
+      -50
+    ],
+    "note": "M5 slots: 18 x 5.5; hull attachment centers 104 x 76. Prefer machined aluminum.",
+    "bounds": [
+      220.0,
+      16.0,
+      5.0
+    ],
+    "volume_mm3": 15732.67,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/07_Mounting_rail_left.stl"
+  },
+  {
+    "id": "07_Mounting_rail_right",
+    "name": "07 Mounting rail right",
+    "category": "mounting",
+    "color": "#aab6bd",
+    "printable": true,
+    "explode": [
+      0,
+      19.0,
+      -50
+    ],
+    "note": "M5 slots: 18 x 5.5; hull attachment centers 104 x 76. Prefer machined aluminum.",
+    "bounds": [
+      220.0,
+      16.0,
+      5.0
+    ],
+    "volume_mm3": 15732.67,
+    "valid": true,
+    "solids": 1,
+    "file": "/cad/parts/07_Mounting_rail_right.stl"
+  },
+  {
+    "id": "08_Identification_plate",
+    "name": "08 Identification plate",
+    "category": "housing",
+    "color": "#ec713e",
+    "printable": true,
+    "explode": [
+      0,
+      0,
+      65
+    ],
+    "note": "Conformal adhesive-bonded ID plate; engraved AQUILA / ADAPTIVE SONAR TX / MoES Prototype.",
+    "bounds": [
+      114.07,
+      32.07,
+      3.43
+    ],
+    "volume_mm3": 6392.01,
+    "valid": true,
+    "solids": 2,
+    "file": "/cad/parts/08_Identification_plate.stl"
+  }
+]

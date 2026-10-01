@@ -1,0 +1,11 @@
+AQUILA - continuous-time analog-chain AC response (NOT sampled DAC AC)
+.param MODE=1 WAVE=2 ZOH=1 WIN=0
+.param FCAR=300k FSTART=200k FEND=400k TPULSE=2m SCALE=1
+.include aquila_hardware_parameters.inc
+.include aquila_models_and_power.inc
+VAC VIN_DAC AGND DC {DAC_MID} AC 1
+.include aquila_signal_chain.inc
+
+.ac dec 400 1k 30Meg
+.include aquila_ac_measurements.inc
+.end

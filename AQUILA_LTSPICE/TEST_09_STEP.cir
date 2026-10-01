@@ -1,0 +1,11 @@
+AQUILA - analog step response; DAC replaced by ideal 20 ns step
+.param MODE=1 WAVE=2 ZOH=1 WIN=0
+.param FCAR=300k FSTART=200k FEND=400k TPULSE=2m SCALE=1
+.include aquila_hardware_parameters.inc
+.include aquila_models_and_power.inc
+VSTEP VIN_DAC AGND PULSE({DAC_MID} {DAC_MID+DAC_PEAK} {TSTART} 20n 20n 10u 100u)
+.include aquila_signal_chain.inc
+.meas TRAN STEP_PEAK MAX V(V_LOAD) FROM 20u TO 30u
+.meas TRAN STEP_LEVEL AVG V(V_LOAD) FROM 27u TO 29u
+.tran 0 60u 0 2n
+.end

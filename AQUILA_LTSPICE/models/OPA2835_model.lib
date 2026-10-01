@@ -1,0 +1,16 @@
+* Wrapper for TI's OPA835 PSpice model, downloaded from OPA2835 product link.
+* TI archive: https://www.ti.com/lit/zip/slom221 ; version Final 1.2, 2017-10-31.
+* Uses one single-channel OPA835 core per OPA2835 channel. Not a dual-die model.
+* No crosstalk, shared-die thermal behavior, or package coupling is modeled.
+* Include vendor/OPA2835/OPA835.lib once BEFORE this file.
+* Model-order pins (NOT physical package numbers): +IN -IN V+ V- OUT REF.
+* REF must be circuit ground because the unmodified TI core uses node 0.
+.subckt OPA2835_CH INP INM VP VN OUT REF
+XTI VN VP INM INP OUT VP OPA835
+Rref REF 0 1G
+.ends OPA2835_CH
+* Optional full SOIC-8 wrapper: OUTA INA- INA+ V- INB+ INB- OUTB V+.
+.subckt OPA2835_DUAL OUTA INA_M INA_P VN INB_P INB_M OUTB VP
+XA INA_P INA_M VP VN OUTA 0 OPA2835_CH
+XB INB_P INB_M VP VN OUTB 0 OPA2835_CH
+.ends OPA2835_DUAL

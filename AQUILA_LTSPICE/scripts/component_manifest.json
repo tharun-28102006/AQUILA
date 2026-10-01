@@ -1,0 +1,619 @@
+{
+  "main": [
+    {
+      "name": "XWAVE",
+      "kind": "AQUILA_WAVEFORM_SOURCE",
+      "nodes": [
+        "CMD_DAC",
+        "AGND"
+      ],
+      "value": "AQUILA_WAVEFORM_SOURCE",
+      "params": "",
+      "pos": [
+        32,
+        256
+      ]
+    },
+    {
+      "name": "XDAC",
+      "kind": "AD3541R",
+      "nodes": [
+        "CMD_DAC",
+        "VIN_DAC",
+        "AGND",
+        "AVDD",
+        "DVDD",
+        "VLOGIC",
+        "PVDD",
+        "PVSS",
+        "DGND"
+      ],
+      "value": "AD3541R_EQ",
+      "params": "",
+      "pos": [
+        352,
+        256
+      ]
+    },
+    {
+      "name": "CDC",
+      "kind": "AQ_C",
+      "nodes": [
+        "VIN_DAC",
+        "VIN_AC"
+      ],
+      "value": "{CCOUPLE}",
+      "params": "",
+      "pos": [
+        736,
+        320
+      ]
+    },
+    {
+      "name": "RBIAS",
+      "kind": "AQ_RV",
+      "nodes": [
+        "VIN_AC",
+        "AGND"
+      ],
+      "value": "{RBIAS}",
+      "params": "",
+      "pos": [
+        864,
+        464
+      ]
+    },
+    {
+      "name": "XU1A",
+      "kind": "OPA2835",
+      "nodes": [
+        "VIN_AC",
+        "V_I_V",
+        "OP_P",
+        "OP_N",
+        "V_I_V",
+        "AGND"
+      ],
+      "value": "OPA2835_CH",
+      "params": "",
+      "pos": [
+        1008,
+        352
+      ]
+    },
+    {
+      "name": "XSK1",
+      "kind": "AQUILA_SK",
+      "nodes": [
+        "V_I_V",
+        "V_FILTER1",
+        "OP_P",
+        "OP_N",
+        "AGND"
+      ],
+      "value": "AQUILA_SK",
+      "params": "RF={RF1} RG={RG1}",
+      "pos": [
+        1360,
+        256
+      ]
+    },
+    {
+      "name": "XSK2",
+      "kind": "AQUILA_SK",
+      "nodes": [
+        "V_FILTER1",
+        "V_FILTER",
+        "OP_P",
+        "OP_N",
+        "AGND"
+      ],
+      "value": "AQUILA_SK",
+      "params": "RF={RF2} RG={RG2}",
+      "pos": [
+        1808,
+        256
+      ]
+    },
+    {
+      "name": "XU3A",
+      "kind": "OPA2684",
+      "nodes": [
+        "V_FILTER",
+        "DRV_NEG",
+        "DRV_P",
+        "DRV_N",
+        "V_AMP_RAW",
+        "AGND"
+      ],
+      "value": "OPA2684_EQ",
+      "params": "",
+      "pos": [
+        2256,
+        352
+      ]
+    },
+    {
+      "name": "RFD",
+      "kind": "AQ_R",
+      "nodes": [
+        "V_AMP",
+        "DRV_NEG"
+      ],
+      "value": "{RDRVF}",
+      "params": "",
+      "pos": [
+        2272,
+        592
+      ]
+    },
+    {
+      "name": "RGD",
+      "kind": "AQ_RV",
+      "nodes": [
+        "DRV_NEG",
+        "AGND"
+      ],
+      "value": "{RDRVG}",
+      "params": "",
+      "pos": [
+        2464,
+        528
+      ]
+    },
+    {
+      "name": "VAMP_SENSE",
+      "kind": "AQ_V",
+      "nodes": [
+        "V_AMP_RAW",
+        "V_AMP"
+      ],
+      "value": "0",
+      "params": "",
+      "pos": [
+        2576,
+        352
+      ]
+    },
+    {
+      "name": "RISO",
+      "kind": "AQ_R",
+      "nodes": [
+        "V_AMP",
+        "LOAD_PRE"
+      ],
+      "value": "{RISO}",
+      "params": "",
+      "pos": [
+        2784,
+        352
+      ]
+    },
+    {
+      "name": "VLOAD_SENSE",
+      "kind": "AQ_V",
+      "nodes": [
+        "LOAD_PRE",
+        "V_LOAD"
+      ],
+      "value": "0",
+      "params": "",
+      "pos": [
+        2992,
+        352
+      ]
+    },
+    {
+      "name": "RLOAD",
+      "kind": "AQ_RV",
+      "nodes": [
+        "V_LOAD",
+        "AGND"
+      ],
+      "value": "{RLOAD}",
+      "params": "",
+      "pos": [
+        3200,
+        432
+      ]
+    }
+  ],
+  "symbols": {
+    "OPA2835": {
+      "value": "OPA2835_CH",
+      "pins": [
+        [
+          "+IN",
+          0,
+          -32,
+          "LEFT"
+        ],
+        [
+          "-IN",
+          0,
+          32,
+          "LEFT"
+        ],
+        [
+          "V+",
+          64,
+          -96,
+          "BOTTOM"
+        ],
+        [
+          "V-",
+          64,
+          96,
+          "TOP"
+        ],
+        [
+          "OUT",
+          160,
+          0,
+          "RIGHT"
+        ],
+        [
+          "REF",
+          112,
+          96,
+          "TOP"
+        ]
+      ],
+      "prefix": "X"
+    },
+    "OPA2684": {
+      "value": "OPA2684_EQ",
+      "pins": [
+        [
+          "+IN",
+          0,
+          -32,
+          "LEFT"
+        ],
+        [
+          "-IN",
+          0,
+          32,
+          "LEFT"
+        ],
+        [
+          "V+",
+          64,
+          -96,
+          "BOTTOM"
+        ],
+        [
+          "V-",
+          64,
+          96,
+          "TOP"
+        ],
+        [
+          "OUT",
+          160,
+          0,
+          "RIGHT"
+        ],
+        [
+          "REF",
+          112,
+          96,
+          "TOP"
+        ]
+      ],
+      "prefix": "X"
+    },
+    "AQUILA_WAVEFORM_SOURCE": {
+      "value": "AQUILA_WAVEFORM_SOURCE",
+      "pins": [
+        [
+          "CMD",
+          192,
+          64,
+          "RIGHT"
+        ],
+        [
+          "REF",
+          96,
+          160,
+          "TOP"
+        ]
+      ],
+      "prefix": "X"
+    },
+    "AD3541R": {
+      "value": "AD3541R_EQ",
+      "pins": [
+        [
+          "CMD",
+          0,
+          64,
+          "LEFT"
+        ],
+        [
+          "OUT",
+          256,
+          64,
+          "RIGHT"
+        ],
+        [
+          "AGND",
+          32,
+          192,
+          "TOP"
+        ],
+        [
+          "AVDD",
+          48,
+          -48,
+          "BOTTOM"
+        ],
+        [
+          "DVDD",
+          112,
+          -48,
+          "BOTTOM"
+        ],
+        [
+          "VLOGIC",
+          192,
+          -48,
+          "BOTTOM"
+        ],
+        [
+          "PVDD",
+          48,
+          256,
+          "TOP"
+        ],
+        [
+          "PVSS",
+          144,
+          256,
+          "TOP"
+        ],
+        [
+          "DGND",
+          224,
+          192,
+          "TOP"
+        ]
+      ],
+      "prefix": "X"
+    },
+    "AQUILA_SK": {
+      "value": "AQUILA_SK",
+      "pins": [
+        [
+          "IN",
+          0,
+          64,
+          "LEFT"
+        ],
+        [
+          "OUT",
+          256,
+          64,
+          "RIGHT"
+        ],
+        [
+          "V+",
+          48,
+          -48,
+          "BOTTOM"
+        ],
+        [
+          "V-",
+          144,
+          -48,
+          "BOTTOM"
+        ],
+        [
+          "REF",
+          128,
+          176,
+          "TOP"
+        ]
+      ],
+      "prefix": "X"
+    },
+    "AQ_R": {
+      "value": "1",
+      "pins": [
+        [
+          "A",
+          0,
+          0,
+          "NONE"
+        ],
+        [
+          "B",
+          96,
+          0,
+          "NONE"
+        ]
+      ],
+      "prefix": "R"
+    },
+    "AQ_RV": {
+      "value": "1",
+      "pins": [
+        [
+          "A",
+          0,
+          0,
+          "NONE"
+        ],
+        [
+          "B",
+          0,
+          96,
+          "NONE"
+        ]
+      ],
+      "prefix": "R"
+    },
+    "AQ_C": {
+      "value": "1",
+      "pins": [
+        [
+          "A",
+          0,
+          0,
+          "NONE"
+        ],
+        [
+          "B",
+          96,
+          0,
+          "NONE"
+        ]
+      ],
+      "prefix": "C"
+    },
+    "AQ_CV": {
+      "value": "1",
+      "pins": [
+        [
+          "A",
+          0,
+          0,
+          "NONE"
+        ],
+        [
+          "B",
+          0,
+          96,
+          "NONE"
+        ]
+      ],
+      "prefix": "C"
+    },
+    "AQ_V": {
+      "value": "1",
+      "pins": [
+        [
+          "A",
+          0,
+          0,
+          "NONE"
+        ],
+        [
+          "B",
+          96,
+          0,
+          "NONE"
+        ]
+      ],
+      "prefix": "V"
+    },
+    "OPA2835_DUAL": {
+      "value": "OPA2835_DUAL",
+      "pins": [
+        [
+          "OUTA",
+          0,
+          32,
+          "LEFT"
+        ],
+        [
+          "INA-",
+          0,
+          80,
+          "LEFT"
+        ],
+        [
+          "INA+",
+          0,
+          128,
+          "LEFT"
+        ],
+        [
+          "V-",
+          0,
+          176,
+          "LEFT"
+        ],
+        [
+          "INB+",
+          256,
+          176,
+          "RIGHT"
+        ],
+        [
+          "INB-",
+          256,
+          128,
+          "RIGHT"
+        ],
+        [
+          "OUTB",
+          256,
+          80,
+          "RIGHT"
+        ],
+        [
+          "V+",
+          256,
+          32,
+          "RIGHT"
+        ]
+      ],
+      "prefix": "X"
+    },
+    "OPA2684_DUAL": {
+      "value": "OPA2684_DUAL",
+      "pins": [
+        [
+          "OUTA",
+          0,
+          32,
+          "LEFT"
+        ],
+        [
+          "INA-",
+          0,
+          80,
+          "LEFT"
+        ],
+        [
+          "INA+",
+          0,
+          128,
+          "LEFT"
+        ],
+        [
+          "V-",
+          0,
+          176,
+          "LEFT"
+        ],
+        [
+          "INB+",
+          256,
+          176,
+          "RIGHT"
+        ],
+        [
+          "INB-",
+          256,
+          128,
+          "RIGHT"
+        ],
+        [
+          "OUTB",
+          256,
+          80,
+          "RIGHT"
+        ],
+        [
+          "V+",
+          256,
+          32,
+          "RIGHT"
+        ]
+      ],
+      "prefix": "X"
+    }
+  }
+}

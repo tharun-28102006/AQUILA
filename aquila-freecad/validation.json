@@ -1,0 +1,66 @@
+{
+  "revision": "A",
+  "units": "mm",
+  "part_count": 59,
+  "printable_parts": 11,
+  "all_breps_valid": true,
+  "assembly_bounds": [
+    330.01,
+    138.0,
+    129.04
+  ],
+  "checks": [
+    {
+      "test": "STEP round trip: 01_Main_enclosure",
+      "passed": true
+    },
+    {
+      "test": "STEP round trip: 02_Front_service_cap",
+      "passed": true
+    },
+    {
+      "test": "STEP round trip: 03_Rear_interface_cap",
+      "passed": true
+    },
+    {
+      "test": "STEP round trip: 04_Electronics_tray",
+      "passed": true
+    },
+    {
+      "test": "Nominal clearance: 01_Main_enclosure / 02_Front_service_cap",
+      "passed": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "test": "Nominal clearance: 01_Main_enclosure / 03_Rear_interface_cap",
+      "passed": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "test": "Nominal clearance: 01_Main_enclosure / 04_Electronics_tray",
+      "passed": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "test": "Nominal clearance: 04_Electronics_tray / PCB_FPGA_DE10_Lite",
+      "passed": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "test": "Nominal clearance: 01_Main_enclosure / 05_Saddle_front",
+      "passed": true,
+      "overlap_mm3": 0.0
+    },
+    {
+      "test": "Nominal clearance: 01_Main_enclosure / 06_Clamp_front",
+      "passed": true,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "No pressure, stress, waterproofing, thermal or manufacturing validation.",
+    "PCB envelopes and all PCB mounting patterns are provisional.",
+    "Connector models are placeholders, not supplier parts.",
+    "Interference checks cover listed structural pairs, not every fastener or cable."
+  ]
+}

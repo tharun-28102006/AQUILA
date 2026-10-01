@@ -1,0 +1,32 @@
+* AQUILA engineering substitute, NOT a TI transistor-level or validated model.
+* A current-feedback architecture is used, NOT a generic voltage-feedback op amp.
+* Pin order: +IN -IN V+ V- OUT REF. See README for SOIC-8 mapping.
+* Assumptions at +/-5 V: Zt(0)=355 kohm, Rin-=4 ohm, Cin+=2 pF,
+* Cz=1.15 pF (~170 MHz closed-loop with RF~800 ohm, gain +2),
+* SR=750 V/us, conservative +/-80 mA limit, 1.5 V rail headroom.
+* The 120 mA headline is NOT treated as guaranteed linear output current.
+* Iq=1.7 mA/channel; signal rail-current sources are class-B accounting proxies.
+* Missing: noise, offset/bias, nonlinear HD, temperature, secondary poles,
+* package/PCB parasitics, realistic recovery and rail-dependent performance.
+.subckt OPA2684_EQ INP INM VP VN OUT REF
+Rplus INP REF 50k
+Cplus INP REF 2p
+Einput ibuf REF INP REF 1
+Rminus INM sense 4
+Vsense sense ibuf 0
+Btrans REF z I={limit(-I(Vsense),-862.5u,862.5u)}
+Rtrans z REF 355k
+Ctrans z REF 1.15p
+Bclamp target REF V={limit(V(z,REF),V(VN,REF)+1.5,V(VP,REF)-1.5)}
+Boutput REF preout I={limit(V(target,OUT),-80m,80m)}
+Vout_sense preout OUT 0
+Rleak OUT REF 1G
+Cout OUT REF 2p
+Iq VP VN 1.7m
+Bpositive VP REF I={max(I(Vout_sense),0)}
+Bnegative REF VN I={max(-I(Vout_sense),0)}
+.ends OPA2684_EQ
+.subckt OPA2684_DUAL OUTA INA_M INA_P VN INB_P INB_M OUTB VP
+XA INA_P INA_M VP VN OUTA 0 OPA2684_EQ
+XB INB_P INB_M VP VN OUTB 0 OPA2684_EQ
+.ends OPA2684_DUAL

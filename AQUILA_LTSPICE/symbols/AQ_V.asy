@@ -1,0 +1,17 @@
+Version 4
+SymbolType CELL
+LINE Normal 0 0 24 0
+CIRCLE Normal 24 -24 72 24
+LINE Normal 72 0 96 0
+TEXT 30 0 Left 1 +
+TEXT 55 0 Left 1 -
+WINDOW 0 16 -48 Left 2
+WINDOW 3 16 -28 Left 2
+SYMATTR Prefix V
+SYMATTR Value 1
+PIN 0 0 NONE 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN 96 0 NONE 8
+PINATTR PinName B
+PINATTR SpiceOrder 2

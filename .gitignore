@@ -4,3 +4,5 @@ __pycache__/
 *.vvp
 rtl/*sim
 rtl/*test
+/AQUILA_LTSPICE/**/*.raw
+/AQUILA_LTSPICE/**/*.log

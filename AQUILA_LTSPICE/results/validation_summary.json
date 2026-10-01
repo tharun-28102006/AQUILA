@@ -1,0 +1,175 @@
+{
+  "provenance": "Independent Python/SciPy LINEARIZED numerical simulation. Not LTspice; does not execute TI model.",
+  "native_LTspice_executed": false,
+  "alternate_SPICE_executed": false,
+  "environment_note": "No LTspice/Wine installed. ngspice unavailable in configured RPM repositories; alternate Debian binary has incompatible runtime dependencies. No native SPICE measurements fabricated.",
+  "numerical_method": "200 MS/s bilinear integration of physical Sallen-Key topology with one-pole 30 MHz GBW / 100 dB OPA2835 surrogate; exact-discrete first-order DAC settling; current-feedback small-signal driver approximation.",
+  "component_pole_Hz": 709246.6269692306,
+  "filter_Q": [
+    0.5405405405405405,
+    1.3157894736842108
+  ],
+  "filter_DC_gain": 2.576,
+  "nominal_chain_gain": 4.293333333333334,
+  "surrogate_filter_cutoff_Hz": 704401.6051161877,
+  "sine_band": [
+    {
+      "frequency_Hz": 100000.0,
+      "vpp_V": 3.004902789357758,
+      "vrms_V": 1.0623804037166067,
+      "current_rms_A": 0.021247608074332135,
+      "current_peak_A": 0.03005478885427937,
+      "power_W": 0.022573042444021203,
+      "driver_current_peak_A": 0.031173453451833193,
+      "amplifier_peak_V": 1.803287331256762,
+      "driver_rail_headroom_V": 3.196712668743238,
+      "slew_V_per_us": 1.1321854004985255,
+      "filter_output_peak_V": 0.9037459891929372,
+      "gain_peak_ratio": 4.3013444940875605,
+      "filter_gain_dB_normalized": 0.02521616814231345
+    },
+    {
+      "frequency_Hz": 200000.0,
+      "vpp_V": 3.0248432656924047,
+      "vrms_V": 1.0694345850137166,
+      "current_rms_A": 0.021388691700274333,
+      "current_peak_A": 0.030251747677357027,
+      "power_W": 0.022873806632469202,
+      "driver_current_peak_A": 0.03137774324847453,
+      "amplifier_peak_V": 1.8151048606414215,
+      "driver_rail_headroom_V": 3.1848951393585785,
+      "slew_V_per_us": 2.281600398808212,
+      "filter_output_peak_V": 0.9096669613140959,
+      "gain_peak_ratio": 4.329888268254997,
+      "filter_gain_dB_normalized": 0.10106104726003043
+    },
+    {
+      "frequency_Hz": 300000.0,
+      "vpp_V": 3.0561284624868077,
+      "vrms_V": 1.0804715467653645,
+      "current_rms_A": 0.02160943093530729,
+      "current_peak_A": 0.030564170855779022,
+      "power_W": 0.023348375267390784,
+      "driver_current_peak_A": 0.03170179508118023,
+      "amplifier_peak_V": 1.8338502513467412,
+      "driver_rail_headroom_V": 3.166149748653259,
+      "slew_V_per_us": 3.4569289793044695,
+      "filter_output_peak_V": 0.9190653176114361,
+      "gain_peak_ratio": 4.374671287424797,
+      "filter_gain_dB_normalized": 0.22087427891447614
+    },
+    {
+      "frequency_Hz": 400000.0,
+      "vpp_V": 3.0825554851543564,
+      "vrms_V": 1.089805176260504,
+      "current_rms_A": 0.02179610352521008,
+      "current_peak_A": 0.030827716085369453,
+      "power_W": 0.02375350644408377,
+      "driver_current_peak_A": 0.031975149686561864,
+      "amplifier_peak_V": 1.8496629651221672,
+      "driver_rail_headroom_V": 3.1503370348778326,
+      "slew_V_per_us": 4.648934864276527,
+      "filter_output_peak_V": 0.9269901360013421,
+      "gain_peak_ratio": 4.412500381268889,
+      "filter_gain_dB_normalized": 0.33853326651811966
+    },
+    {
+      "frequency_Hz": 500000.0,
+      "vpp_V": 3.029024584455822,
+      "vrms_V": 1.0709569312985847,
+      "current_rms_A": 0.021419138625971695,
+      "current_peak_A": 0.030292543384764118,
+      "power_W": 0.022938974973929632,
+      "driver_current_peak_A": 0.031420057406529533,
+      "amplifier_peak_V": 1.8175526030858469,
+      "driver_rail_headroom_V": 3.182447396914153,
+      "slew_V_per_us": 5.707356683053423,
+      "filter_output_peak_V": 0.9108988069253524,
+      "gain_peak_ratio": 4.550045868830168,
+      "filter_gain_dB_normalized": 0.24264208218633448
+    }
+  ],
+  "pulses": {
+    "lfm": {
+      "vpp_V": 3.0559912781440945,
+      "vrms_V": 0.5962935006216312,
+      "current_rms_A": 0.011925870012432624,
+      "current_peak_A": 0.030560811232069374,
+      "power_W": 0.007111318777671987,
+      "driver_current_peak_A": 0.03169831040944168,
+      "amplifier_peak_V": 1.8336486739241624,
+      "driver_rail_headroom_V": 3.1663513260758376,
+      "slew_V_per_us": 3.4818784704758126,
+      "filter_output_peak_V": 0.9189659158181378,
+      "gain_peak_ratio": 4.3692261447631955,
+      "energy_including_tail_J": 1.422263755589139e-05,
+      "median_frequency_error_Hz": 93.82363731594523
+    },
+    "geometric": {
+      "vpp_V": 3.0501489296313564,
+      "vrms_V": 0.5952371300938801,
+      "current_rms_A": 0.011904742601877603,
+      "current_peak_A": 0.03050238354917463,
+      "power_W": 0.007086144820847976,
+      "driver_current_peak_A": 0.03163770799889577,
+      "amplifier_peak_V": 1.8301430129504779,
+      "driver_rail_headroom_V": 3.1698569870495223,
+      "slew_V_per_us": 3.278890293332104,
+      "filter_output_peak_V": 0.9172097355217712,
+      "gain_peak_ratio": 4.35920885147068,
+      "energy_including_tail_J": 1.4172289642222837e-05,
+      "median_frequency_error_Hz": 90.25981350411894
+    },
+    "phase_code": {
+      "vpp_V": 3.056088208200781,
+      "vrms_V": 0.5959552045208202,
+      "current_rms_A": 0.011919104090416403,
+      "current_peak_A": 0.030565541835040334,
+      "power_W": 0.007103252115909052,
+      "driver_current_peak_A": 0.0317032170894463,
+      "amplifier_peak_V": 1.8339325101024202,
+      "driver_rail_headroom_V": 3.16606748989758,
+      "slew_V_per_us": 3.879882346665339,
+      "filter_output_peak_V": 0.9191064928497246,
+      "gain_peak_ratio": 4.3746136657405525,
+      "energy_including_tail_J": 1.4206504234666845e-05
+    }
+  },
+  "images": [
+    {
+      "image_frequency_Hz": 4700000.0,
+      "dac_dBc": -24.6095937362988,
+      "filtered_dBc": -92.52270447257958,
+      "load_dBc": -92.52611349582705,
+      "additional_filter_suppression_dB": -67.91311073628077
+    },
+    {
+      "image_frequency_Hz": 5300000.0,
+      "dac_dBc": -25.827431362882606,
+      "filtered_dBc": -98.10075352693006,
+      "load_dBc": -98.10508930211923,
+      "additional_filter_suppression_dB": -72.27332216404746
+    }
+  ],
+  "surrogate_checks": {
+    "sine_amplitude_within_2p8_to_3p2_Vpp": true,
+    "cutoff_within_650_to_750_kHz": true,
+    "driver_peak_below_conservative_3p5_V": true,
+    "driver_peak_current_below_conservative_80mA": true,
+    "driver_slew_below_750_V_per_us": true,
+    "filter_output_below_2V_peak": true,
+    "image_filter_suppression_exceeds_55dB": true,
+    "lfm_median_frequency_error_below_1kHz": true,
+    "geometric_median_frequency_error_below_1kHz": true,
+    "blackman_sample_endpoints_zero": true
+  },
+  "power_estimates": {
+    "OPA2835_four_channels_quiescent_W": 0.005,
+    "buffer_channel_quiescent_W": 0.00125,
+    "filter_two_channels_quiescent_W": 0.0025,
+    "spare_OPA2835_quiescent_W": 0.00125,
+    "OPA2684_two_channels_quiescent_W": 0.033999999999999996,
+    "DAC_power_W": null,
+    "note": "Datasheet-typical estimates. Class-B load-dependent draw is separate; DAC and converter losses remain unknown."
+  }
+}

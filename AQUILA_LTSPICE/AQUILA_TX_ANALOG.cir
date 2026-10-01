@@ -1,0 +1,8 @@
+AQUILA TX - sampled Blackman LFM, 200 to 400 kHz, 2 ms
+.include aquila_parameters.inc
+.include aquila_models_and_power.inc
+.include aquila_dac_stimulus.inc
+.include aquila_signal_chain.inc
+.tran 0 {TSTOP} 0 {TMAX}
+.include aquila_transient_measurements.inc
+.end

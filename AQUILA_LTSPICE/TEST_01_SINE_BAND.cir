@@ -1,0 +1,14 @@
+AQUILA - five sine frequencies, steady-state measurements
+.param MODE=1 WAVE=2 ZOH=1 WIN=0
+.param FCAR=300k FSTART=200k FEND=400k TPULSE=2m SCALE=1
+.include aquila_hardware_parameters.inc
+.include aquila_models_and_power.inc
+.include aquila_dac_stimulus.inc
+.include aquila_signal_chain.inc
+.step param FCAR list 100k 200k 300k 400k 500k
+.meas TRAN STEADY_VPP PP V(V_LOAD) FROM {TSTART+200u} TO {TSTART+TPULSE-20u}
+.meas TRAN STEADY_RMS RMS V(V_LOAD) FROM {TSTART+200u} TO {TSTART+TPULSE-20u}
+.meas TRAN STEADY_POWER AVG V(P_LOAD_W) FROM {TSTART+200u} TO {TSTART+TPULSE-20u}
+.tran 0 {TSTOP} 0 {TMAX}
+.include aquila_transient_measurements.inc
+.end
